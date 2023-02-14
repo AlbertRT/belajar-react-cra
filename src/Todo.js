@@ -24,7 +24,7 @@ function Todo() {
             };
 
             const editTodoIndex = todos.findIndex(function (todo) {
-                return todo.id == edit.id;
+                return todo.id === edit.id;
             });
 
             const updatedTodos = [...todos];
@@ -73,7 +73,7 @@ function Todo() {
         }
 
         const editTodoIndex = todos.findIndex(function (currentTodo) {
-            return currentTodo.id == todo.id
+            return currentTodo.id === todo.id
         })
 
         const updatedTodos = [...todos]
